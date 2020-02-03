@@ -14,3 +14,10 @@
 3. 大型企业更愿意用react。
 4. 生态也更好。
 
+# 路线
++ react
++ react-router
++ redux
++ umi（脚手架）
++ UI库（Ant Design）
++ 源码（React、Redux）

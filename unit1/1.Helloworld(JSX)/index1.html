@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- 加上crossorigin 跨域后报错 会显示很详细的信息   -->
+    <!-- React的核心库，与宿主环境无关   -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <!-- 依赖核心库，将核心的功能与页面结合   -->
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <script>
+        //创建一个span元素
+        let span = React.createElement('span',{},'一个span')
+        //创建一个H1元素
+        let h1 = React.createElement('h1',{
+            title:'第一个React元素',
+        },'Hello World',span);
+        console.log(h1);
+        console.log(JSON.stringify(h1));
+        ReactDOM.render(h1,document.getElementById('root'));
+    </script>
+</body>
+</html>
